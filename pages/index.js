@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -19,7 +18,7 @@ export default function Home() {
 
         <p className={styles.description}>Currently working on your <code className={styles.code}>website</code>!
         </p>
-        <p className={styles.small}>That's why there isn't much here 😅</p>
+        <p className={styles.small}>That&apos;s why there isn&apos;t much here 😅</p>
 
         <div className={styles.grid}>
           <div className={styles.card}>
@@ -36,7 +35,7 @@ export default function Home() {
 
           <div className={styles.card}>
           <h2>My work &rarr;</h2>
-            <p>Currently a work in progress... My work can be seen on my <a href="https://www.linkedin.com/in/mikkellbech/" target="_blank">LinkedIn</a>.</p>
+            <p>Currently a work in progress... My work can be seen on my <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mikkellbech/" target="_blank">LinkedIn</a>.</p>
           </div>
 
           <div className={styles.card}>
@@ -44,19 +43,19 @@ export default function Home() {
           <p>I am always looking for new and exciting opportunities. Feel free to contact me using one of the below;</p>
           <br></br>
             <p className={styles.cardLink}>
-              LinkedIn {'->'} <a href="https://www.linkedin.com/in/mikkellbech/" target="_blank">@mikkellbech</a>
+              LinkedIn {'->'} <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mikkellbech/" target="_blank">@mikkellbech</a>
             </p>
             <p className={styles.cardLink}>
-            Worksome {'->'} <a href="https://use.worksome.dk/profile/2090" target="_blank">@MikkelBech</a>
+            Worksome {'->'} <a rel="noopener noreferrer" href="https://use.worksome.dk/profile/2090" target="_blank">@MikkelBech</a>
             </p>
             <p className={styles.cardLink}>
-            Github {'->'} <a href="https://github.com/BE-CH" target="_blank">@BE-CH</a>
+            Github {'->'} <a rel="noopener noreferrer" href="https://github.com/BE-CH" target="_blank">@BE-CH</a>
             </p>
             <p className={styles.cardLink}>
-            E-mail {'->'} <a href="mailto:mikkel@bechsolutions.dk" target="_blank">mikkel@bechsolutions.dk</a>
+            E-mail {'->'} <a rel="noopener noreferrer" href="mailto:mikkel@bechsolutions.dk" target="_blank">mikkel@bechsolutions.dk</a>
             </p>
             <p className={styles.cardLink}>
-            Phone {'->'} <a href="tel:+4521775413" target="_blank">+45 21 77 54 13</a>
+            Phone {'->'} <a rel="noopener noreferrer" href="tel:+4521775413" target="_blank">+45 21 77 54 13</a>
             </p>
           </div>
         </div>
@@ -70,7 +69,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <img src="/logo.png" className={styles.actualImage}/>
+            <img src="/logo.png" alt="Bech Solutions logo" className={styles.actualImage}/>
           </span>
         </a>
       </footer>
