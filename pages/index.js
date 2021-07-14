@@ -41,18 +41,76 @@ export default function Home() {
               and more.{' '}
             </p>
             <br />
-            <p>Is your web solution built differently? Feel free to contact me. I might still be able to help! 😃</p>
+            <p>Is your web solution built differently? Feel free to contact me. I might still be able to help!</p>
           </div>
 
           <div className={styles.card}>
             <h2>My work &rarr;</h2>
-            <p>
-              Currently a work in progress... My work can be seen on my{' '}
-              <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mikkellbech/" target="_blank">
-                LinkedIn
-              </a>
-              .
-            </p>
+            <div className={styles.myWorkCardContainer}>
+              <div className={styles.myWorkCard}>
+                <a href="https://nemanimation.dk" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/nemanimation.jfif" alt="Nem Animation" />
+                  <p>Nem Animation</p>
+                  <p className={styles.myWorkDescription}>
+                    A full-stack web solution with two seperate panels; a customer-panel and an admin-panel.
+                  </p>
+                  <p className={styles.myWorkDescription}>
+                    Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
+                  </p>
+                </a>
+              </div>
+
+              <div className={styles.myWorkCard}>
+                <a href="https://firstdrawing.com" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/firstdrawing.png" alt="Nem Animation" />
+                  <p>First Drawing</p>
+                  <p className={styles.myWorkDescription}>
+                    A full-stack web solution with three seperate panels; a customer-panel, an admin-panel and a
+                    designer-panel.
+                  </p>
+                  <p className={styles.myWorkDescription}>
+                    Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
+                  </p>
+                </a>
+              </div>
+
+              <div className={styles.myWorkCard}>
+                <a href="https://romomotorfestival.dk" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/romomotorfestival.png" alt="Nem Animation" />
+                  <p>Rømø Motor Festival</p>
+                  <p className={styles.myWorkDescription}>
+                    A full-stack web solution with two seperate panels; a customer-panel and an admin-panel.
+                  </p>
+                  <p className={styles.myWorkDescription}>
+                    Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
+                  </p>
+                </a>
+              </div>
+
+              <div className={styles.myWorkCard}>
+                <a href="https://læringsbevis.dk" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/laeringsbevis.jpeg" alt="Nem Animation" />
+                  <p>Læringsbevis</p>
+                  <p className={styles.myWorkDescription}>
+                    A full-stack web solution with three seperate panels; a customer-panel, an admin-panel and a
+                    student-panel.
+                  </p>
+                  <p className={styles.myWorkDescription}>
+                    Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
+                  </p>
+                </a>
+              </div>
+
+              <div className={styles.findMyWork}>
+                <p>
+                  You can find more of my work on{' '}
+                  <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mikkellbech/" target="_blank">
+                    LinkedIn
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className={styles.card}>
@@ -62,31 +120,31 @@ export default function Home() {
             </p>
             <br></br>
             <p className={styles.cardLink}>
-              LinkedIn {'->'}{' '}
+              LinkedIn:{' '}
               <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mikkellbech/" target="_blank">
                 @mikkellbech
               </a>
             </p>
             <p className={styles.cardLink}>
-              Worksome {'->'}{' '}
+              Worksome:{' '}
               <a rel="noopener noreferrer" href="https://use.worksome.dk/profile/2090" target="_blank">
                 @MikkelBech
               </a>
             </p>
             <p className={styles.cardLink}>
-              Github {'->'}{' '}
+              Github:{' '}
               <a rel="noopener noreferrer" href="https://github.com/BE-CH" target="_blank">
                 @BE-CH
               </a>
             </p>
             <p className={styles.cardLink}>
-              E-mail {'->'}{' '}
+              E-mail:{' '}
               <a rel="noopener noreferrer" href="mailto:mikkel@bechsolutions.dk" target="_blank">
                 mikkel@bechsolutions.dk
               </a>
             </p>
             <p className={styles.cardLink}>
-              Phone {'->'}{' '}
+              Phone:{' '}
               <a rel="noopener noreferrer" href="tel:+4521775413" target="_blank">
                 +45 21 77 54 13
               </a>
