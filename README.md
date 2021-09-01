@@ -1,3 +1,4 @@
-## Bech Solutions
+# Bech Solutions 🔥
+Official website for Bech Solutions made by Mikkel Bech
 
-Official website for Bech Solutions
+Live site: https://www.bechsolutions.dk/
