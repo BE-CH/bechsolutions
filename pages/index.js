@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="Bech Solutions offer high quality websites made with love from scratch." />
         <meta
           name="keywords"
-          content="Mikkel Bech, Bech, Solutions, Website, HQ Websites, scratch, intergrated, BechSolutions"
+          content="Mikkel Bech, Bech, Solutions, Website, HQ Websites, scratch, intergrated, BechSolutions, React, Nextjs, Javascript, Modern"
         />
       </Head>
 
@@ -25,10 +25,10 @@ export default function Home() {
 
         <div className={styles.grid}>
           <div className={styles.aboutMeCard}>
-            <img className={styles.profileImage} alt="Mikkel Bech @ Bech Solutions" src="./MikkelBech.jpg" />
+            <img className={styles.profileImage} alt="Mikkel Bech @ Bech Solutions" src="./MikkelBech_v1.jpeg" />
             <h2>Mikkel Bech</h2>
             <p>
-              I am a 22 years old web developer that focuses on delivering modern, scaleable and high quality web
+              I am a 23 years old web developer that focuses on delivering modern, scaleable and high quality web
               solutions. ⚡🚀
             </p>
           </div>
@@ -36,17 +36,41 @@ export default function Home() {
           <div className={styles.card}>
             <h2>My skills &rarr;</h2>
             <p>
-              My primary focus is on Javascript, HTML and CSS. I have worked with front-end libraries such as Next.js
-              (React), Fabric.js and more. In terms of back-end I have been working with Node.js, Express.js, MongoDB
-              and more.{' '}
+              My primary focus is on Javascript, Typescript, HTML and CSS. I have worked with front-end libraries such
+              as React.js, Next.js, Svelte, Fabric.js and more. In terms of back-end I have been working with Node.js,
+              Nest.js, Express.js and more!
             </p>
             <br />
-            <p>Is your web solution built differently? Feel free to contact me. I might still be able to help!</p>
+            <p>My go-to database is MongoDB but I am also skilled in PostgreSQL and MSSQL.</p>
+            <div className={styles.icons}>
+              <div className={styles.actualicons}>
+                <img src="/icons/javascript.svg" alt="Javascript" />
+                <img src="/icons/typescript.svg" alt="Typescript" />
+                <img src="/icons/react.svg" alt="React" />
+                <img src="/icons/nextjs.svg" alt="NextJS" />
+                <img src="/icons/svelte.svg" alt="Svelte" />
+                <img src="/icons/nodejs.svg" alt="NodeJS" />
+                <img src="/icons/nestjs.svg" alt="NestJS" />
+                <img src="/icons/mongodb.svg" alt="MongoDB" />
+                <img src="/icons/postgresql.svg" alt="MongoDB" />
+              </div>
+              <p>Is your web solution built differently? Feel free to contact me. I might still be able to help!</p>
+            </div>
           </div>
 
           <div className={styles.card}>
             <h2>My work &rarr;</h2>
             <div className={styles.myWorkCardContainer}>
+              <div className={styles.myWorkCard}>
+                <a href="https://automat.læringsbevis.dk/" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/laeringsbevis-automat.png" alt="Nem Animation" />
+                  <p>Læringsbevis Automat</p>
+                  <p className={styles.myWorkDescription}>
+                    A full-stack web app that helps users create resumes and applications when searching for a new job.
+                  </p>
+                  <p className={styles.myWorkDescription}>Made with Typescript, Nest.js, Next.js and MongoDB.</p>
+                </a>
+              </div>
               <div className={styles.myWorkCard}>
                 <a href="https://nemanimation.dk" target="_blank" rel="noopener noreferrer">
                   <img className={styles.myWorkImage} src="/nemanimation.jfif" alt="Nem Animation" />
@@ -80,20 +104,6 @@ export default function Home() {
                   <p>Rømø Motor Festival</p>
                   <p className={styles.myWorkDescription}>
                     A full-stack web solution with two seperate panels; a customer-panel and an admin-panel.
-                  </p>
-                  <p className={styles.myWorkDescription}>
-                    Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
-                  </p>
-                </a>
-              </div>
-
-              <div className={styles.myWorkCard}>
-                <a href="https://læringsbevis.dk" target="_blank" rel="noopener noreferrer">
-                  <img className={styles.myWorkImage} src="/laeringsbevis.jpeg" alt="Nem Animation" />
-                  <p>Læringsbevis</p>
-                  <p className={styles.myWorkDescription}>
-                    A full-stack web solution with three seperate panels; a customer-panel, an admin-panel and a
-                    student-panel.
                   </p>
                   <p className={styles.myWorkDescription}>
                     Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
