@@ -2,6 +2,12 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  async function linkedinclick() {
+    if (window.plausible) {
+      window.plausible('LinkedInClick'); // Send LinkedIn click event
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -114,7 +120,12 @@ export default function Home() {
               <div className={styles.findMyWork}>
                 <p>
                   You can find more of my work on{' '}
-                  <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mikkellbech/" target="_blank">
+                  <a
+                    onClick={() => linkedinclick()}
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/mikkellbech/"
+                    target="_blank"
+                  >
                     LinkedIn
                   </a>
                   .
@@ -131,7 +142,12 @@ export default function Home() {
             <br></br>
             <p className={styles.cardLink}>
               LinkedIn:{' '}
-              <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mikkellbech/" target="_blank">
+              <a
+                onClick={() => linkedinclick()}
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/mikkellbech/"
+                target="_blank"
+              >
                 @mikkellbech
               </a>
             </p>
