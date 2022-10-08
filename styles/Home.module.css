@@ -123,6 +123,9 @@
   border: 1px solid #eaeaea8e;
   border-radius: 10px;
   margin-bottom: 10px;
+  height: 135px;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .myWorkCard a {
@@ -194,6 +197,11 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.card mark {
+  background-color: transparent;
+  color: #0070f3;
 }
 
 .findMyWork {

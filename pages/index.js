@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Typed from 'typed.js';
+import { useEffect } from 'react';
 
 export default function Home() {
   async function linkedinclick() {
@@ -7,6 +9,18 @@ export default function Home() {
       window.plausible('LinkedInClick'); // Send LinkedIn click event
     }
   }
+
+  useEffect(() => {
+    var options = {
+      strings: ['website', 'app', 'database', 'Docker containers', 'web solution'],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true,
+      showCursor: false,
+      backDelay: 5000,
+    };
+    new Typed('.testelement', options);
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -25,9 +39,12 @@ export default function Home() {
         <h1 className={styles.title}>Bech Solutions</h1>
 
         <p className={styles.description}>
-          Currently working on your <code className={styles.code}>website</code>!
+          Currently working on your{' '}
+          <code className={styles.code}>
+            <span className="testelement"></span>
+          </code>
+          !
         </p>
-        <p className={styles.small}>That&apos;s why there isn&apos;t much here 😅</p>
 
         <div className={styles.grid}>
           <div className={styles.aboutMeCard}>
@@ -42,12 +59,17 @@ export default function Home() {
           <div className={styles.card}>
             <h2>My skills &rarr;</h2>
             <p>
-              My primary focus is on Javascript, Typescript, HTML and CSS. I have worked with front-end libraries such
-              as React.js, Next.js, Svelte, Fabric.js and more. In terms of back-end I have been working with Node.js,
-              Nest.js, Express.js and more!
+              My primary focus is <mark>Javascript</mark>, <mark>Typescript</mark>, <mark>HTML</mark> and{' '}
+              <mark>CSS</mark>. I have worked with front-end libraries such as <mark>React.js</mark>,{' '}
+              <mark>Next.js</mark>, <mark>Svelte</mark>, <mark>Fabric.js</mark> and more. In terms of back-end I have
+              been working with <mark>Node.js</mark>, <mark>Nest.js</mark>, <mark>Express.js</mark> and more!
             </p>
             <br />
-            <p>My go-to database is MongoDB but I am also skilled in PostgreSQL and MSSQL.</p>
+            <p>
+              My go-to database is <mark>MongoDB</mark> but I am also skilled in <mark>SQL</mark> using{' '}
+              <mark>PostgreSQL</mark> and <mark>MSSQL</mark>. In terms of organizing and running everything, I like
+              doing it inside containerized environments using <mark>Docker</mark>!
+            </p>
             <div className={styles.icons}>
               <div className={styles.actualicons}>
                 <img src="/icons/javascript.svg" alt="Javascript" />
@@ -69,30 +91,33 @@ export default function Home() {
             <div className={styles.myWorkCardContainer}>
               <div className={styles.myWorkCard}>
                 <a href="https://automat.læringsbevis.dk/" target="_blank" rel="noopener noreferrer">
-                  <img className={styles.myWorkImage} src="/laeringsbevis-automat.png" alt="Nem Animation" />
+                  <img className={styles.myWorkImage} src="/laeringsbevis-automat.png" alt="Læringsbevis" />
                   <p>Læringsbevis Automat</p>
                   <p className={styles.myWorkDescription}>
                     A full-stack web app that helps users create resumes and applications when searching for a new job.
                   </p>
-                  <p className={styles.myWorkDescription}>Made with Typescript, Nest.js, Next.js and MongoDB.</p>
+                  <p className={styles.myWorkDescription}>
+                    Made with Typescript, Nest.js, Next.js and MongoDB. Containerized with Docker.
+                  </p>
                 </a>
               </div>
               <div className={styles.myWorkCard}>
-                <a href="https://nemanimation.dk" target="_blank" rel="noopener noreferrer">
-                  <img className={styles.myWorkImage} src="/nemanimation.jfif" alt="Nem Animation" />
-                  <p>Nem Animation</p>
+                <a href="https://pongit.dk" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/pongit.jpg" alt="PongIT" />
+                  <p>PongIT</p>
                   <p className={styles.myWorkDescription}>
-                    A full-stack web solution with two seperate panels; a customer-panel and an admin-panel.
+                    A full-stack web solution to support creation and paritcipation of table tennis tournaments.
                   </p>
                   <p className={styles.myWorkDescription}>
-                    Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
+                    Made with C#, ASP.NET and EF Core as back-end. Typescript and Next.js as front-end. Containerized
+                    with Docker.
                   </p>
                 </a>
               </div>
 
               <div className={styles.myWorkCard}>
                 <a href="https://firstdrawing.com" target="_blank" rel="noopener noreferrer">
-                  <img className={styles.myWorkImage} src="/firstdrawing.png" alt="Nem Animation" />
+                  <img className={styles.myWorkImage} src="/firstdrawing.png" alt="First Drawing" />
                   <p>First Drawing</p>
                   <p className={styles.myWorkDescription}>
                     A full-stack web solution with three seperate panels; a customer-panel, an admin-panel and a
@@ -105,15 +130,14 @@ export default function Home() {
               </div>
 
               <div className={styles.myWorkCard}>
-                <a href="https://romomotorfestival.dk" target="_blank" rel="noopener noreferrer">
-                  <img className={styles.myWorkImage} src="/romomotorfestival.png" alt="Nem Animation" />
-                  <p>Rømø Motor Festival</p>
+                <a href="https://tilbudstracker.dk" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/tilbudstracker.jpeg" alt="Tilbudstracker" />
+                  <p>Tilbudstracker</p>
                   <p className={styles.myWorkDescription}>
-                    A full-stack web solution with two seperate panels; a customer-panel and an admin-panel.
+                    A full-stack web app, that tracks and highlights the best deals on groceries from Danish
+                    supermarkets.
                   </p>
-                  <p className={styles.myWorkDescription}>
-                    Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
-                  </p>
+                  <p className={styles.myWorkDescription}>Made with Typescript, Next.js and serverless functions.</p>
                 </a>
               </div>
 

@@ -635,6 +635,7 @@ __metadata:
     next: 11.0.1
     react: 17.0.2
     react-dom: 17.0.2
+    typed.js: ^2.0.12
   languageName: unknown
   linkType: soft
 
@@ -4537,6 +4538,13 @@ resolve@^2.0.0-next.3:
   version: 0.7.1
   resolution: "type-fest@npm:0.7.1"
   checksum: 13aa0b28ad4e3464eb62c33e7fe5165b41305abab68222507a6f728be9fc43da2aa61d25f5422296137f7751dbd4a71d6dbd7c7030dc1d897769ef09e8c1588c
+  languageName: node
+  linkType: hard
+
+"typed.js@npm:^2.0.12":
+  version: 2.0.12
+  resolution: "typed.js@npm:2.0.12"
+  checksum: b17ed74438fc525877252e156c6a5471b352e7a74ff72be51c73a7b223159d5d0f38ef8f83ac5913fce16cbb66193f67ae6dc29b2609a655a92b042cb9d12342
   languageName: node
   linkType: hard
 
