@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <div className={styles.aboutMeCard}>
-            <img className={styles.profileImage} alt="Mikkel Bech @ Bech Solutions" src="./MikkelBech_v1.jpeg" />
+            <img className={styles.profileImage} alt="Mikkel Bech @ Bech Solutions" src="./mikkelbech_color.jpg" />
             <h2>Mikkel Bech</h2>
             <p>
               I am a 23 years old web developer that focuses on delivering modern, scaleable and high quality web
