@@ -48,10 +48,10 @@ export default function Home() {
 
         <div className={styles.grid}>
           <div className={styles.aboutMeCard}>
-            <img className={styles.profileImage} alt="Mikkel Bech @ Bech Solutions" src="./mikkelbech_color.jpg" />
+            <img className={styles.profileImage} alt="Mikkel Bech @ Bech Solutions" src="./mikkelbech_color.jpeg" />
             <h2>Mikkel Bech</h2>
             <p>
-              I am a 23 years old web developer that focuses on delivering modern, scaleable and high quality web
+              I am a 25 years old web developer that focuses on delivering modern, scaleable and high quality web
               solutions. ⚡🚀
             </p>
           </div>
@@ -59,10 +59,11 @@ export default function Home() {
           <div className={styles.card}>
             <h2>My skills &rarr;</h2>
             <p>
-              My primary focus is <mark>Javascript</mark>, <mark>Typescript</mark>, <mark>HTML</mark> and{' '}
-              <mark>CSS</mark>. I have worked with front-end libraries such as <mark>React.js</mark>,{' '}
+              My primary focus is <mark>C#</mark>, <mark>Javascript</mark>, <mark>Typescript</mark>, <mark>HTML</mark>{' '}
+              and <mark>CSS</mark>. I have worked with front-end libraries such as <mark>React.js</mark>,{' '}
               <mark>Next.js</mark>, <mark>Svelte</mark>, <mark>Fabric.js</mark> and more. In terms of back-end I have
-              been working with <mark>Node.js</mark>, <mark>Nest.js</mark>, <mark>Express.js</mark> and more!
+              been working with <mark>Node.js</mark>, <mark>Nest.js</mark>, <mark>Express.js</mark>, <mark>.NET</mark>,{' '}
+              <mark>ASPNET Core</mark> and more!
             </p>
             <br />
             <p>
