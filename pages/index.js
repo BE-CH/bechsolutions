@@ -200,6 +200,12 @@ export default function Home() {
                 +45 21 77 54 13
               </a>
             </p>
+            <p className={styles.cardLink}>
+              CVR:{' '}
+              <a rel="noopener noreferrer" href="https://datacvr.virk.dk/enhed/virksomhed/45143473" target="_blank">
+                DK-45143473
+              </a>
+            </p>
           </div>
         </div>
       </main>
