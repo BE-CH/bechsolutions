@@ -22,6 +22,15 @@ export default function Home() {
     new Typed('.testelement', options);
   }, []);
 
+  // Calculate age dynamically based on birthdate (June 15, 1999)
+  const birthDate = new Date(1999, 5, 15);
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -51,8 +60,8 @@ export default function Home() {
             <img className={styles.profileImage} alt="Mikkel Bech @ Bech Solutions" src="./mikkelbech_color.jpeg" />
             <h2>Mikkel Bech</h2>
             <p>
-              I am a 25 years old web developer that focuses on delivering modern, scaleable and high quality web
-              solutions. ⚡🚀
+              I am a {age} year{age !== 1 ? 's' : ''} old web developer that focuses on delivering modern, scalable and
+              high-quality web solutions. ⚡🚀
             </p>
           </div>
 
@@ -91,6 +100,17 @@ export default function Home() {
             <h2>My work &rarr;</h2>
             <div className={styles.myWorkCardContainer}>
               <div className={styles.myWorkCard}>
+                <a href="https://trustmarket.dk" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/trustmarket.png" alt="TrustMarket" />
+                  <p>TrustMarket</p>
+                  <p className={styles.myWorkDescription}>Verified community marketplace for private flea markets.</p>
+                  <p className={styles.myWorkDescription}>
+                    Built with React Native · Next.js · NestJS · MongoDB. Containerized with Docker.
+                  </p>
+                </a>
+              </div>
+
+              <div className={styles.myWorkCard}>
                 <a href="https://automat.læringsbevis.dk/" target="_blank" rel="noopener noreferrer">
                   <img className={styles.myWorkImage} src="/laeringsbevis-automat.png" alt="Læringsbevis" />
                   <p>Læringsbevis Automat</p>
@@ -98,7 +118,7 @@ export default function Home() {
                     A full-stack web app that helps users create resumes and applications when searching for a new job.
                   </p>
                   <p className={styles.myWorkDescription}>
-                    Made with Typescript, Nest.js, Next.js and MongoDB. Containerized with Docker.
+                    Built with Typescript, Nest.js, Next.js and MongoDB. Containerized with Docker.
                   </p>
                 </a>
               </div>
@@ -110,22 +130,8 @@ export default function Home() {
                     A full-stack web solution to support creation and paritcipation of table tennis tournaments.
                   </p>
                   <p className={styles.myWorkDescription}>
-                    Made with C#, ASP.NET and EF Core as back-end. Typescript and Next.js as front-end. Containerized
+                    Built with C#, ASP.NET and EF Core as back-end. Typescript and Next.js as front-end. Containerized
                     with Docker.
-                  </p>
-                </a>
-              </div>
-
-              <div className={styles.myWorkCard}>
-                <a href="https://firstdrawing.com" target="_blank" rel="noopener noreferrer">
-                  <img className={styles.myWorkImage} src="/firstdrawing.png" alt="First Drawing" />
-                  <p>First Drawing</p>
-                  <p className={styles.myWorkDescription}>
-                    A full-stack web solution with three seperate panels; a customer-panel, an admin-panel and a
-                    designer-panel.
-                  </p>
-                  <p className={styles.myWorkDescription}>
-                    Made with Node.js, Express.js and MongoDB as back-end. HTML & CSS as front-end.
                   </p>
                 </a>
               </div>
