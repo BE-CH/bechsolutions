@@ -68,11 +68,10 @@ export default function Home() {
           <div className={styles.card}>
             <h2>My skills &rarr;</h2>
             <p>
-              My primary focus is <mark>C#</mark>, <mark>Javascript</mark>, <mark>Typescript</mark>, <mark>HTML</mark>{' '}
-              and <mark>CSS</mark>. I have worked with front-end libraries such as <mark>React.js</mark>,{' '}
-              <mark>Next.js</mark>, <mark>Svelte</mark>, <mark>Fabric.js</mark> and more. In terms of back-end I have
-              been working with <mark>Node.js</mark>, <mark>Nest.js</mark>, <mark>Express.js</mark>, <mark>.NET</mark>,{' '}
-              <mark>ASPNET Core</mark> and more!
+              My primary focus is <mark>C#</mark>, <mark>Typescript</mark> and <mark>React Native</mark>. I have worked
+              with front-end libraries such as <mark>React.js</mark>, <mark>Next.js</mark>, <mark>Svelte</mark>,{' '}
+              <mark>Fabric.js</mark> and more. In terms of back-end I have been working with <mark>Node.js</mark>,{' '}
+              <mark>Nest.js</mark>, <mark>Express.js</mark>, <mark>.NET</mark>, <mark>ASPNET Core</mark> and more!
             </p>
             <br />
             <p>
@@ -103,7 +102,9 @@ export default function Home() {
                 <a href="https://trustmarket.dk" target="_blank" rel="noopener noreferrer">
                   <img className={styles.myWorkImage} src="/trustmarket.png" alt="TrustMarket" />
                   <p>TrustMarket</p>
-                  <p className={styles.myWorkDescription}>Verified community marketplace for private flea markets.</p>
+                  <p className={styles.myWorkDescription}>
+                    Verified community marketplace for private flea markets. Available on iOS and Android.
+                  </p>
                   <p className={styles.myWorkDescription}>
                     Built with React Native · Next.js · NestJS · MongoDB. Containerized with Docker.
                   </p>
@@ -137,14 +138,16 @@ export default function Home() {
               </div>
 
               <div className={styles.myWorkCard}>
-                <a href="https://tilbudstracker.dk" target="_blank" rel="noopener noreferrer">
-                  <img className={styles.myWorkImage} src="/tilbudstracker.jpeg" alt="Tilbudstracker" />
-                  <p>Tilbudstracker</p>
+                <a href="https://loentjek.app/" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.myWorkImage} src="/loentjek-app.png" alt="Løntjek" />
+                  <p>Løntjek</p>
                   <p className={styles.myWorkDescription}>
-                    A full-stack web app, that tracks and highlights the best deals on groceries from Danish
-                    supermarkets.
+                    A full-stack iOS & Android app, that allows users to see real and verified salaries and payslips
+                    from danish citizens.
                   </p>
-                  <p className={styles.myWorkDescription}>Made with Typescript, Next.js and serverless functions.</p>
+                  <p className={styles.myWorkDescription}>
+                    Built with React Native · Next.js · NestJS · MongoDB. Containerized with Docker.
+                  </p>
                 </a>
               </div>
 
